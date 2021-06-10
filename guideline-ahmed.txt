@@ -1,0 +1,14 @@
+next_project--05.06.2021
+========================
+  npm run dev => Starts the development server.
+  npm run build => Builds the app for production.
+  npm start => Runs the built app in production mode.
+
+We suggest that you begin by typing:
+  cd next_practice
+  npm run dev
+----------------------------------------
+.env.local
+.env.development
+.env.production
+

@@ -14,3 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.main_content{
+  width:600px;
+  margin: 0 auto;
+  display:block;
+}

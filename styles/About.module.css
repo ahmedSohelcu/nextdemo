@@ -1,0 +1,18 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    color: #ddd;
+    background: #000;
+    text-decoration: underline
+}
+
+.container{
+  min-height: 300px;
+}
