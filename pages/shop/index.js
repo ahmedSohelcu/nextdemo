@@ -70,7 +70,10 @@ const Shop = (props) => {
   const res = await fetch('https://demostore.uparzon.com/api/uparzonweb/get_home_products');
   const data = await res.json();
   return {
-    props:{ data}  
+    props:{
+       data
+    },
+    revalidate: 10, // In seconds  
   }
 }
 
