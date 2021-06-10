@@ -12,3 +12,8 @@ We suggest that you begin by typing:
 .env.development
 .env.production
 
+
+//project in vercel...
+//==================================
+https://nextdemo-peach.vercel.app/shop
+
