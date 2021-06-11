@@ -25,9 +25,9 @@ const Layout = ({children})=>{
             <Link href="/shop">Shop</Link>
           </li>
 
-          <Link href={`/shop`} as={`/shop`}>
+          {/* <Link href={`/shop`} as={`/shop`}>
                         <a>Shop with as</a>
-          </Link> 
+          </Link>  */}
   
           {/* <Link href={`/shop/${id}`} as={`/shop/${id}`}>
                         <a>Shop by menu</a>

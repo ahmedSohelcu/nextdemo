@@ -29,7 +29,7 @@ const Shop = (props) => {
 
     <div key="product.id" className={blogStyles.buttonArea}>
       <a className={blogStyles.addToCart} className ={blogStyles.shop_continue_button}>Add to cart</a>
-      <a className={blogStyles.productDetailsButton} href={`/shop/${product.id}`}  className ={blogStyles.shop_continue_button }>
+      <a className={blogStyles.productDetailsButton} myData={product} href={`/shop/${product.id}`}  className ={blogStyles.shop_continue_button }>
         Product details
       </a>
     </div> 
