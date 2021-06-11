@@ -3,68 +3,22 @@ import styles from "../../styles/blog.module.css";
 import SingleBlog from '../../components/SingleBlog'
 import Layout from '../../components/Layout'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 
 const BlogDetails = () => {
+  const router = useRouter();
+
+  console.log(router);
+  console.log('product id is :'+router.query.id);
     return (
         <Fragment>
           <Layout>
             <h4 className = { styles.title } > from single product details file. </h4>
             <div className = { styles.container }>
-            <h2>single product page... title for details page....</h2>
-            <Image src="/download.jpg" width={220} height={200} alt="fsdsaf" />
-            <Image src="/maxresdefault.jpg" width={220} height={200} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={220} height={200} alt="fsdsaf" />
-            <Image src="/download.jpg" width={220} height={200} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={250} height={200} alt="fsdsaf" />
-            <p>
-              lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa  
-            </p>
-            
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/maxresdefault.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/maxresdefault.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
+              <h2>single product's id is <code> {router.query.id}</code> </h2>
 
-            <p>
-              lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa  fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa 
-            </p>
-            
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/maxresdefault.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/maxresdefault.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download.jpg" width={110} height={100} alt="fsdsaf" />
-            <Image src="/download (1).jpg" width={110} height={100} alt="fsdsaf" />
-            
-            <p>
-              lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa ksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa fksa fksa fasf sakfsaa fksa salf salf lorem sjfdsak asfj dsafsafsa 
-              fksa fksa fasf sakfsaa fksa salf salfakfsaa 
-            </p>
+              {/* <Image src="/download.jpg" width={220} height={200} alt="fsdsaf"/> */}
+
             </div> 
           </Layout>
         </Fragment >

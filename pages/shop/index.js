@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React,{Fragment, useState, useEffect } from 'react';
 import styles from "../../styles/blog.module.css";
 import SingleProduct from '../../components/SingleProduct'
 import Layout from '../../components/Layout'
@@ -7,6 +7,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const Shop = (props) => {
+
+// useEffect(() => {
+//   alert('hello..');
+//   //this.getStaticProps();
+// },[]);
 
 // const hello = function(e){
 //   e.preventDefault();
@@ -20,11 +25,11 @@ const Shop = (props) => {
       {product.name}
     </h4>
   
-    <Image src={ "http:"+product.photo} width={550} height={350}/>
+    <Image src={ "http:"+product.photo} width={550} height={350}/> {product.id}
 
-    <div className={blogStyles.buttonArea}>
-      <a className={blogStyles.addToCart} onClick={()=>hello() } href="/shop/5" className ={blogStyles.shop_continue_button}>Add to cart</a>
-      <a className={blogStyles.productDetailsButton}  className ={blogStyles.shop_continue_button } href="/shop/5">
+    <div key="product.id" className={blogStyles.buttonArea}>
+      <a className={blogStyles.addToCart} className ={blogStyles.shop_continue_button}>Add to cart</a>
+      <a className={blogStyles.productDetailsButton} href={`/shop/${product.id}`}  className ={blogStyles.shop_continue_button }>
         Product details
       </a>
     </div> 
@@ -54,8 +59,8 @@ const Shop = (props) => {
         <Fragment>
           <Layout>
             <h4 className = { styles.title } > Hello form Shop page.. </h4>
-            <div className = { styles.container }>             
-              {productsComponent}                      
+            <div className = { styles.container }>
+              {productsComponent}
             </div> 
           </Layout>
         </Fragment >
@@ -67,7 +72,7 @@ const Shop = (props) => {
 //============================================
 // export async function //getServerSideProps(){
   export async function getStaticProps(){
-  const res = await fetch('https://demostore.uparzon.com/api/uparzonweb/get_home_products');
+  const res  = await fetch('https://demostore.uparzon.com/api/uparzonweb/get_home_products');
   const data = await res.json();
   return {
     props:{

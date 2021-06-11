@@ -9,8 +9,8 @@ const ContactUs = () => {
     {name:'Ahmed',roll:'151'},
     {name:'Asad',roll:'565'},
     {name:'Rashed',roll:'554'},
-    {name:'Taslima',roll:'564'},
-    {name:'Bilkis',roll:'648'}
+    {name:'Asad',roll:'565'},
+    {name:'Rashed',roll:'554'},
   ];
 
     return (
@@ -28,7 +28,7 @@ const ContactUs = () => {
                           </li>
                         )
                       }       
-                          
+                        
                       {
                         students.map((student,index)=>
                           <li> 
