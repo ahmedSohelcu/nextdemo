@@ -11,7 +11,7 @@ const Shop = (props) => {
 // useEffect(() => {
 //   alert('hello..');
 //   //this.getStaticProps();
-// },[]);
+// },[]);d
 
 // const hello = function(e){
 //   e.preventDefault();
