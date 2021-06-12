@@ -70,15 +70,15 @@ const Shop = (props) => {
 //============================================
 //getServerSideProps
 //============================================
-// export async function //getServerSideProps(){
-  export async function getStaticProps(){
+//export async function getServerSideProps(){
+export async function getStaticProps(){
   const res  = await fetch('https://demostore.uparzon.com/api/uparzonweb/get_home_products');
   const data = await res.json();
   return {
     props:{
        data
-    },
-    revalidate: 10, // In seconds  
+    }
+   // revalidate: 10, // In seconds  
   }
 }
 

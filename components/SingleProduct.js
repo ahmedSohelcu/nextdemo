@@ -12,8 +12,8 @@ const SingleProduct = () => {
       
       <Image src="/download (1).jpg" width={550} height={350} alt="fsdsaf" />
       <div className = { styles.blog_content }>
-      prodcut content goose here.prodcut content goose here.prodcut content goose here.
-      .prodcut content goose here.
+        prodcut content goose here.prodcut content goose here.prodcut content goose here.
+        .prodcut content goose here.
       <br/>
       </div>
       <div>
