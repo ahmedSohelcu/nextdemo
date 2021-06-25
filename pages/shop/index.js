@@ -1,6 +1,5 @@
 import React,{Fragment, useState, useEffect } from 'react';
 import styles from "../../styles/blog.module.css";
-// import tailwindcss from 'tailwindcss'; //load tailwind css
 import SingleProduct from '../../components/SingleProduct';
 import Layout from '../../components/Layout';
 import blogStyles from "../../styles/blog.module.css";
@@ -76,3 +75,5 @@ export async function getServerSideProps(){
 
 
 export default Shop;
+
+// <786></AHMEDcu>
