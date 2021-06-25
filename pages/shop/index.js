@@ -73,7 +73,4 @@ export async function getServerSideProps(){
   }
 }
 
-
 export default Shop;
-
-// <786></AHMEDcu>
