@@ -16,6 +16,9 @@ const Layout = ({children})=>{
             <Link href="/home">Home</Link>
           </li>
           <li>
+            <Link href="/tailwind">Tailwind</Link>
+          </li>
+          <li>
             <Link href="/about">About Us</Link>
           </li>
           <li>

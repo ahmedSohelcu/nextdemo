@@ -1,7 +1,8 @@
 import React,{Fragment, useState, useEffect } from 'react';
 import styles from "../../styles/blog.module.css";
-import SingleProduct from '../../components/SingleProduct'
-import Layout from '../../components/Layout'
+// import tailwindcss from 'tailwindcss'; //load tailwind css
+import SingleProduct from '../../components/SingleProduct';
+import Layout from '../../components/Layout';
 import blogStyles from "../../styles/blog.module.css";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -11,15 +12,10 @@ const Shop = (props) => {
 // useEffect(() => {
 //   alert('hello..');
 //   //this.getStaticProps();
-// },[]);d
-
-// const hello = function(e){
-//   e.preventDefault();
-//   alert('hello...');
-// }
+// },[]);
 
  const productsComponent = (
-    props.data.products.random_products?.map((product,index)=>
+    props.data?.products.random_products?.map((product,index)=>
     <div key="{product.id}" className = { blogStyles.single_blog }>
     <h4 className = { blogStyles.blog_title }>
       {product.name}
@@ -47,13 +43,10 @@ const Shop = (props) => {
     .blog_buttonArea__2ThKv a {
       margin: 1px 5px;
     }
-    
     `}
   </style>
 </div>
 ));
-
-
 
     return (
         <Fragment>
@@ -66,12 +59,11 @@ const Shop = (props) => {
         </Fragment >
     );
 };
-
 //============================================
 //getServerSideProps
 //============================================
-//export async function getServerSideProps(){
-export async function getStaticProps(){
+export async function getServerSideProps(){
+// export async function //getStaticProps(){
   const res  = await fetch('https://demostore.uparzon.com/api/uparzonweb/get_home_products');
   const data = await res.json();
   return {

@@ -17,3 +17,8 @@ We suggest that you begin by typing:
 //==================================
 https://nextdemo-peach.vercel.app/shop
 
+
+added packages...
+------------------------------------
+nextjs
+tailwindCSS

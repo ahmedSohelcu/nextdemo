@@ -17,32 +17,9 @@ const ContactUs = () => {
         <Fragment>
           <Layout>
               <h4 className = { styles.title } > Hello form home page.. </h4>
-                <div className = { styles.container } >    
-                <Image src="/vercel.svg" alt ="Vercel Logo" width = { 150 } height = { 50 }/>    
-                <ul>                
-                      {
-                        students.map((student,index)=>
-                          <li> 
-                            <a>{student.name}</a>
-                             (R: <a>{student.roll}</a>)
-                          </li>
-                        )
-                      }       
-                        
-                      {
-                        students.map((student,index)=>
-                          <li> 
-                            <a>{student.name}</a>
-                             (R: <a>{student.roll}</a>)
-                          </li>
-                        )
-                      }
-                    
-                  </ul>           
-              </div> 
           </Layout>
         </Fragment >
     );
 };
 
-export default ContactUs;
+export default ContactUs; 
